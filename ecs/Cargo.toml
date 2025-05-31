@@ -1,0 +1,14 @@
+[package]
+name = "ecs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Use workspace dependencies
+serde = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# ECS-specific dependencies
+slotmap = "1.0"  # Efficient entity storage
+bitvec = "1.0"   # Component masks

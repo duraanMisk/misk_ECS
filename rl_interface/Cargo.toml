@@ -1,0 +1,18 @@
+[package]
+name = "rl_interface"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Use workspace dependencies
+nalgebra = { workspace = true }
+serde = { workspace = true }
+pyo3 = { workspace = true, optional = true }
+
+# Other workspace crates
+ecs = { path = "../ecs" }
+physics = { path = "../physics" }
+
+[features]
+default = []
+python = ["pyo3"]

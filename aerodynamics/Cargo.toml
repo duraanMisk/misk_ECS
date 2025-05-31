@@ -1,0 +1,13 @@
+[package]
+name = "aerodynamics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Use workspace dependencies
+nalgebra = { workspace = true }
+serde = { workspace = true }
+
+# Other workspace crates
+ecs = { path = "../ecs" }
+physics = { path = "../physics" }
